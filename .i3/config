@@ -109,7 +109,7 @@ set $ws6 "  "
 set $ws7 "  "
 set $ws8 "  "
 set $ws9 "  "
-set $ws0 " 10 "
+set $ws0 "  "
 
 assign [class="Firefox"] $ws6
 assign [class="Thunderbird"] $ws7
