@@ -27,6 +27,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 "Plug 'vim-syntastic/syntastic'
 "Plug 'nvie/vim-flake8'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -74,6 +75,7 @@ let python_highlight_all=1
 syntax on
 
 set number
+set relativenumber
 set smartindent
 
 " Highlight search results
@@ -86,3 +88,6 @@ set incsearch
 set wildmenu
 set path+=**
 
+"==============================COC-Plugin================================================== 
+ 
+"==============================COC-Plugin================================================== 
