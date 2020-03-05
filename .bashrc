@@ -120,7 +120,7 @@ fi
 
 alias OUTPUT1="pactl set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo"
 alias MYIP="curl -s ifconfig.co"
-alias PFSCP="cp -v $HOME/Downloads/config-PFS.fero-term.local-*.xml $HOME/FT/Backup/Configs/PFS/"
+alias PFSCP="cp -v $HOME/Downloads/config-PFS.*.xml $HOME/FT/Backup/Configs/PFS/"
 alias PIKI="$HOME/Scripts/bkpPiki.sh"
 alias UP="sudo apt update && sudo apt upgrade"
 alias WTTR="curl -s wttr.in/Zagreb"
