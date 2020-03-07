@@ -25,10 +25,10 @@ runtime! debian.vim
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
+"Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 "Plug 'vim-syntastic/syntastic'
 "Plug 'nvie/vim-flake8'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 call plug#end()
 
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
