@@ -183,27 +183,21 @@ bindsym $mod+r mode "resize"
 
 #Set colors
 set $jellow-dark	#ffdd00
+set $orange-dark	#ff7700
 set $green-light	#00ff00
-#set $green-dark		#297E21
+#set $green-dark	#297E21
 set $green-dark		#808000
 set $gray-light		#D2DAD1
 set $gray-dark		#4b4b4b
 set $black		#000000
 set $white		#ffffff
 
-#set $bg-color 	         #66CC00
-#set $inactive-bg-color   #2f343f
-#set $text-color         #ff0000 
-#set $inactive-text-color #676E7D
-#set $urgent-bg-color     #E53935
-
-
 # Window colors
-#                       border              background         text                 indicator
-client.focused          $gray-dark         $gray-dark         $gray-light         $jellow-dark
-#client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #FF8000
-#client.focused_inactive $border-color      $inactive-bg-color $inactive-text-color #FF8000
-#client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #FF8000
+#                       border          background      text            indicator
+client.focused          $gray-dark      $gray-dark      $gray-light     $jellow-dark
+client.unfocused        $black		$black		$black		$black
+client.focused_inactive	$black		$black		$black		$black
+client.urgent		$black		$black		$black		$black
 
 
 
@@ -211,20 +205,20 @@ bar {
 	position top
 	status_command SCRIPT_DIR=~/.scripts/i3blocks i3blocks
 
-#colors {
+colors {
 #		background $bg-color
 #	    	separator #757575
-#		#                  border             background         text
-#		focused_workspace  $bg-color          $bg-color          $text-color
-#		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-#		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-#	}
+		#                  border       background      text
+		focused_workspace  $gray-dark	$gray-dark	$white
+#		inactive_workspace 
+#		urgent_workspace  
+	}
 
 }
 
 
 # Window border set to 1p
-new_window pixel 2
+new_window pixel 3
 
 bindsym $mod+Ctrl+l exec /usr/bin/i3lock -e -c 4b4b4b
 #bindsym $mod+Ctrl+l exec /usr/bin/i3lock-fancy 
@@ -242,8 +236,8 @@ exec_always --no-startup-id feh --bg-fill /home/john/.wallpaper.jpg
 exec_always --no-startup-id compton
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +3% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -3% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +1% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -1% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 ## Media player controls
@@ -251,3 +245,8 @@ Bindsym XF86AudioPlay exec playerctl play
 Bindsym XF86AudioPause exec playerctl pause
 Bindsym XF86AudioNext exec playerctl next
 Bindsym XF86AudioPrev exec playerctl previous
+
+
+##Backlight
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 10
