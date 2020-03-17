@@ -5,6 +5,7 @@
 # this file and re-run i3-config-wizard(1).
 #
 for_window [class="Yad"] floating enable
+for_window [class="MEGAsync"] floating enable
 
 # i3 config file (v4)
 #
