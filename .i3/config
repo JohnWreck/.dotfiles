@@ -86,8 +86,8 @@ bindsym $mod+f fullscreen toggle
 
 ## change container layout (stacked, tabbed, toggle split)
 #bindsym $mod+s layout stacking
-#bindsym $mod+w layout tabbed
-#bindsym $mod+e layout toggle split
+bindsym $mod+t layout tabbed
+bindsym $mod+s layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -131,6 +131,7 @@ bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws0
 
 bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -195,8 +196,8 @@ set $white		#ffffff
 
 # Window colors
 #                       border          background      text            indicator
-client.focused          $gray-dark      $gray-dark      $gray-light     $jellow-dark
-client.unfocused        $black		$black		$black		$black
+client.focused          $gray-dark      $gray-dark      $white          $jellow-dark
+client.unfocused        $gray-dark	$black		$gray-dark	$black
 client.focused_inactive	$black		$black		$black		$black
 client.urgent		$black		$black		$black		$black
 
@@ -210,7 +211,7 @@ colors {
 #		background $bg-color
 #	    	separator #757575
 		#                  border       background      text
-		focused_workspace  $gray-dark	$gray-dark	$white
+		focused_workspace  $gray-dark   $gray-dark	$white
 #		inactive_workspace 
 #		urgent_workspace  
 	}
