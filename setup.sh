@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+mv ~/.config/dunst/ ~/.config/dunst.bak/
 mv ~/.vimrc ~/.vimrc.bak
 mv ~/.i3blocks.conf ~/.i3blocks.conf.bak
 mv ~/.scripts/ ~/.scripts.bak/
@@ -18,3 +18,4 @@ ln -s ~/.dotfiles/.icons/ ~/.icons
 ln -s ~/.dotfiles/.fonts/ ~/.fonts
 ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/.i3/config ~/.config/i3/config
+ln -s ~/.dotfiles/dunst/ ~/.config/dunst
