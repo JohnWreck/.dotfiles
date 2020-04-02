@@ -121,7 +121,6 @@ fi
 alias OUTPUT1="pactl set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo"
 alias MYIP="curl -s ifconfig.co"
 alias PFSCP="cp -v $HOME/Downloads/config-PFS.*.xml $HOME/FT/Backup/Configs/PFS/"
-alias PIKI="$HOME/Scripts/bkpPiki.sh"
 alias UP="sudo apt update && sudo apt upgrade"
 alias WTTR="curl -s wttr.in/Zagreb"
 alias W="$HOME/.dotfiles/.scripts/i3blocks/weather"
@@ -130,6 +129,7 @@ alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
 alias M="/home/john/FT/Backup/dotfiles/.scripts/mood.py"
 alias S="cvlc http://161.53.122.184:8000/AAC128.aac &"
 
+export EDITOR='/usr/bin/vim'
 
 force_color_prompt=yes
 
