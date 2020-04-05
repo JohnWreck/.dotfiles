@@ -70,7 +70,7 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
-" My Stuff
+"==============================My-Stuff================================================== 
 
 let python_highlight_all=1
 syntax on
@@ -88,6 +88,9 @@ set incsearch
 ":find tweaks
 set wildmenu
 set path+=**
+
+" Vim-GTK copy to clipboard
+"vnoremap <C-c> "+y
 
 "==============================COC-Plugin================================================== 
  
