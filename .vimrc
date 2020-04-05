@@ -25,6 +25,7 @@ runtime! debian.vim
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdtree'
 "Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 "Plug 'vim-syntastic/syntastic'
 "Plug 'nvie/vim-flake8'
