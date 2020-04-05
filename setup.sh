@@ -17,5 +17,5 @@ ln -s ~/.dotfiles/.bashrc ~/.bashrc
 ln -s ~/.dotfiles/.icons/ ~/.icons
 ln -s ~/.dotfiles/.fonts/ ~/.fonts
 ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
-ln -s ~/.dotfiles/.i3/config ~/.config/i3/config
+ln -s ~/.dotfiles/i3/config ~/.config/i3/config
 ln -s ~/.dotfiles/dunst/ ~/.config/dunst
