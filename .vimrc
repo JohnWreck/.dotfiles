@@ -26,11 +26,15 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
+Plug 'tomasiser/vim-code-dark'
 "Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 "Plug 'vim-syntastic/syntastic'
 "Plug 'nvie/vim-flake8'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+
+"colorscheme pablo
+colorscheme codedark
 
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
