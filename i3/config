@@ -202,7 +202,7 @@ set $white		#ffffff
 #                       border          background      text            indicator
 client.focused          $gray-dark     	$gray-dark      $black         $jellow-dark
 client.unfocused        $gray-dark	$black		$gray-dark	$black
-client.focused_inactive	$black		$black		$black		$black
+client.focused_inactive	$gray-dark	$black		$gray-dark	$black
 client.urgent		$black		$black		$black		$black
 
 

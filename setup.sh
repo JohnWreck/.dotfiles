@@ -9,6 +9,7 @@ mv ~/.icons/ ~/.icons.bak/
 mv ~/.fonts/ ~/.fonts.bak/
 mv ~/.tmux.conf ~/.tmux.conf.bak
 mv ~/.config/i3/config ~/.config/i3/config.bak
+mv ~/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml.bak
 
 ln -s ~/.dotfiles/.vimrc ~/.vimrc
 ln -s ~/.dotfiles/.i3blocks.conf ~/.i3blocks.conf
@@ -19,3 +20,4 @@ ln -s ~/.dotfiles/.fonts/ ~/.fonts
 ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/i3/config ~/.config/i3/config
 ln -s ~/.dotfiles/dunst/ ~/.config/dunst
+ln -s ~/.dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
