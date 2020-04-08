@@ -230,6 +230,7 @@ bindsym $mod+Ctrl+l exec /usr/bin/i3lock -e -c 4b4b4b
 #bindsym $mod+Ctrl+l exec /usr/bin/i3lock-fancy 
 #bindsym $mod+e exec nautilus
 bindsym $mod+e exec /usr/bin/alacritty -e ranger 
+bindsym $mod+m exec /usr/bin/alacritty -e cmus
 bindsym $mod+w exec firefox
 bindsym Print exec gnome-screenshot
 
@@ -243,8 +244,8 @@ exec_always --no-startup-id feh --bg-fill /home/john/.wallpaper.jpg
 exec_always --no-startup-id compton
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +1% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -1% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +3% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -3% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 ## Media player controls

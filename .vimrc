@@ -76,8 +76,8 @@ endif
 
 "==============================My-Stuff================================================== 
 
-let python_highlight_all=1
-syntax on
+"let python_highlight_all=1
+"syntax on
 
 set number
 set relativenumber
@@ -95,6 +95,7 @@ set path+=**
 
 " Vim-GTK copy to clipboard
 "vnoremap <C-c> "+y
+
 
 "==============================COC-Plugin================================================== 
  
