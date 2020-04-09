@@ -1,10 +1,11 @@
-sudo apt update
-
 ## i3 install Ubuntu 18.04(netinstall)
-sudo apt install xorg
-sudo apt install i3 i3blocks lxappearance fonts-firacode breez-cursor-theme curl \
-cmus feh vim htop compton ranger alacritty nautilus numlockx xbacklight gir1.2-gtop-2.0 \
-lm-sensors network-manager bc 
+apt update
+apt install xorg i3 i3blocks dkms software-properties-common curl
+
+add-apt-repository ppa:mmstick76/alacritty
+apt update
+
+apt install lxappearance fonts-firacode cmus feh vim-gtk3 htop compton ranger alacritty numlockx xbacklight gir1.2-gtop-2.0 lm-sensors network-manager bc 
 
 
 ## Vim-Plug
