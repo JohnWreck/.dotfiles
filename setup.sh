@@ -1,23 +1,23 @@
 #!/bin/bash
 
-mv ~/.config/dunst/ ~/.config/dunst.bak/
-mv ~/.vimrc ~/.vimrc.bak
-mv ~/.i3blocks.conf ~/.i3blocks.conf.bak
-mv ~/.scripts/ ~/.scripts.bak/
-mv ~/.bashrc ~/.bashrc.bak
-mv ~/.icons/ ~/.icons.bak/
-mv ~/.fonts/ ~/.fonts.bak/
-mv ~/.tmux.conf ~/.tmux.conf.bak
-mv ~/.config/i3/config ~/.config/i3/config.bak
-mv ~/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml.bak
+mv $HOME/.config/dunst/ $HOME/.config/dunst.bak/
+mv $HOME/.vimrc $HOME/.vimrc.bak
+mv $HOME/.i3blocks.conf $HOME/.i3blocks.conf.bak
+mv $HOME/.scripts/ $HOME/.scripts.bak/
+mv $HOME/.bashrc $HOME/.bashrc.bak
+mv $HOME/.icons/ $HOME/.icons.bak/
+mv $HOME/.fonts/ $HOME/.fonts.bak/
+mv $HOME/.tmux.conf $HOME/.tmux.conf.bak
+mv $HOME/.config/i3/config $HOME/.config/i3/config.bak
+mv $HOME/.config/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml.bak
 
-ln -s ~/.dotfiles/.vimrc ~/.vimrc
-ln -s ~/.dotfiles/.i3blocks.conf ~/.i3blocks.conf
-ln -s ~/.dotfiles/.scripts/ ~/.scripts
-ln -s ~/.dotfiles/.bashrc ~/.bashrc
-ln -s ~/.dotfiles/.icons/ ~/.icons
-ln -s ~/.dotfiles/.fonts/ ~/.fonts
-ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
-ln -s ~/.dotfiles/i3/config ~/.config/i3/config
-ln -s ~/.dotfiles/dunst/ ~/.config/dunst
-ln -s ~/.dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
+ln -s $HOME/.dotfiles/.i3blocks.conf $HOME/.i3blocks.conf
+ln -s $HOME/.dotfiles/.scripts $HOME/.scripts
+ln -s $HOME/.dotfiles/.bashrc $HOME/.bashrc
+ln -s $HOME/.dotfiles/.icons $HOME/.icons
+ln -s $HOME/.dotfiles/.fonts $HOME/.fonts
+ln -s $HOME/.dotfiles/.tmux.conf $HOME/.tmux.conf
+ln -s $HOME/.dotfiles/i3/config $HOME/.config/i3/config
+ln -s $HOME/.dotfiles/dunst $HOME/.config/dunst
+ln -s $HOME/.dotfiles/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml
