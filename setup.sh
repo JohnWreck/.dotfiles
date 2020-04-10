@@ -11,6 +11,9 @@ mv $HOME/.tmux.conf $HOME/.tmux.conf.bak
 mv $HOME/.config/i3/config $HOME/.config/i3/config.bak
 mv $HOME/.config/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml.bak
 
+mkdir $HOME/.config/alacritty
+mkdir $HOME/.config/dunst
+
 ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc
 ln -s $HOME/.dotfiles/.i3blocks.conf $HOME/.i3blocks.conf
 ln -s $HOME/.dotfiles/.scripts $HOME/.scripts

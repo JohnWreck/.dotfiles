@@ -4,6 +4,6 @@ date '+%d %b %H:%M'
 
 case $BLOCK_BUTTON in
 	
-	1) notify-send "$(cal)"
+	1) notify-send "$(ncal )"
 
 esac
