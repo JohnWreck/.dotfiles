@@ -113,14 +113,12 @@ set $ws7 "  "
 set $ws8 "  "
 set $ws9 "  "
 set $ws0 "  "
-set $ws11 "  "
 
 assign [class="Firefox"] $ws6
 assign [class="Thunderbird"] $ws7
 assign [class="Steam"] $ws8
 assign [class="Lutris"] $ws9
 assign [class="Transmission-gtk"] $ws0
-assign [class="Lollypop"] $ws11
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1 
