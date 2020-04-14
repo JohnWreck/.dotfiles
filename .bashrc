@@ -124,7 +124,8 @@ alias PFSCP="cp -v $HOME/Downloads/config-PFS.*.xml $HOME/FT/Backup/Configs/PFS/
 alias UP="sudo apt update && apt list --upgradable && sudo apt upgrade -V"
 alias WTTR="curl -s wttr.in/Zagreb"
 alias W="$HOME/.dotfiles/.scripts/i3blocks/weather"
-alias H="cat $HOME/FT/Tmp/hosts.csv | grep -i "
+alias H="cat $HOME/FT/Tmp/hosts.csv | grep -i"
+alias HPING="cat $HOME/FT/Tmp/hosts.csv | fzf -e | cut -d ',' -f1 | xargs -I '{}' ping {}"
 alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
 alias M="/home/john/FT/Backup/dotfiles/.scripts/mood.py"
 alias S="cvlc http://161.53.122.184:8000/AAC128.aac &"
@@ -151,3 +152,5 @@ else
 fi
 
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
