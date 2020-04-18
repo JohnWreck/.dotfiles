@@ -26,6 +26,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf'
 Plug 'tomasiser/vim-code-dark'
 "Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 "Plug 'vim-syntastic/syntastic'
