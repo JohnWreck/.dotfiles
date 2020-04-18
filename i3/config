@@ -227,7 +227,8 @@ new_window pixel 2
 bindsym $mod+Ctrl+l exec /usr/bin/i3lock --nofork -e -c 4b4b4b
 #bindsym $mod+Ctrl+l exec /usr/bin/i3lock-fancy 
 #bindsym $mod+e exec nautilus
-bindsym $mod+e exec /usr/bin/alacritty -e ranger 
+#bindsym $mod+e exec /usr/bin/alacritty -e ranger 
+bindsym $mod+e exec /usr/bin/alacritty -e nnn -c 2 
 bindsym $mod+m exec /usr/bin/alacritty -e cmus
 bindsym $mod+w exec firefox
 bindsym Print exec maim $HOME/Pictures/Screenshots/$(date +%s).png
