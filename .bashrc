@@ -129,6 +129,7 @@ alias HPING="cat $HOME/FT/Tmp/hosts.csv | fzf -e | cut -d ',' -f1 | xargs -I '{}
 alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
 alias M="/home/john/FT/Backup/dotfiles/.scripts/mood.py"
 alias S="cvlc http://161.53.122.184:8000/AAC128.aac &"
+alias P="sxiv *"
 
 export EDITOR='/usr/bin/vim'
 

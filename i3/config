@@ -227,13 +227,13 @@ new_window pixel 2
 bindsym $mod+Ctrl+l exec /usr/bin/i3lock --nofork -e -c 4b4b4b
 #bindsym $mod+Ctrl+l exec /usr/bin/i3lock-fancy 
 #bindsym $mod+e exec nautilus
-#bindsym $mod+e exec /usr/bin/alacritty -e ranger 
-bindsym $mod+e exec /usr/bin/alacritty -e nnn -c 2 
-bindsym $mod+m exec /usr/bin/alacritty -e cmus
+bindsym $mod+e exec --no-startup-id /usr/bin/alacritty -e ranger 
+#bindsym $mod+e exec /usr/bin/alacritty -e nnn -d
+bindsym $mod+m exec  --no-startup-id/usr/bin/alacritty -e cmus
 bindsym $mod+w exec firefox
-bindsym Print exec maim $HOME/Pictures/Screenshots/$(date +%s).png
-bindsym $mod+Print exec maim -s $HOME/Pictures/Screenshots/$(date +%s).png
-bindsym $mod+Shift+Print exec $HOME/.scripts/maim_to_html.sh 
+bindsym Print exec --no-startup-id maim $HOME/Pictures/Screenshots/$(date +%s).png
+bindsym $mod+Print exec --no-startup-id maim -s $HOME/Pictures/Screenshots/$(date +%s).png
+bindsym $mod+Shift+Print exec --no-startup-id $HOME/.scripts/maim_to_html.sh 
 
 # Exec stuff
 exec --no-startup-id /usr/bin/megasync
