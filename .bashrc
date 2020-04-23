@@ -118,6 +118,9 @@ fi
 
 ## My custom
 
+xset r rate 200 50
+
+
 alias OUTPUT1="pactl set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo"
 alias MYIP="curl -s ifconfig.co"
 alias PFSCP="cp -v $HOME/Downloads/config-PFS.*.xml $HOME/FT/Backup/Configs/PFS/"
@@ -155,3 +158,6 @@ fi
 
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+## nnn
+
+export NNN_BMS='m:/mnt;M:/media'
