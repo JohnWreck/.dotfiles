@@ -107,18 +107,24 @@ set $ws1 " 1 "
 set $ws2 " 2 "
 set $ws3 " 3 "
 set $ws4 " 4 "
-set $ws5 " 5 "
+set $ws5 " "
 set $ws6 "  "
 set $ws7 "  "
-set $ws8 "  "
-set $ws9 "  "
-set $ws0 "  "
+set $ws8 " 8 "
+set $ws9 " 9 "
+set $ws0 "  "
+set $ws11 "  "
+set $ws12 "  "
+set $ws13 "  "
+set $ws14 "  "
 
 assign [class="Firefox"] $ws6
 assign [class="Thunderbird"] $ws7
-assign [class="Steam"] $ws8
-assign [class="Lutris"] $ws9
-assign [class="Transmission-gtk"] $ws0
+assign [class="Lollypop"] $ws0
+assign [class="Steam"] $ws11
+assign [class="Lutris"] $ws12
+assign [class="Transmission-gtk"] $ws13
+assign [class="VirtualBox Manager"] $ws14
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1 
