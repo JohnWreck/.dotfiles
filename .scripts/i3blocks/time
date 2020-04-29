@@ -6,8 +6,7 @@ refresh="pkill -RTMIN+10 i3blocks"
 
 case $BLOCK_BUTTON in
 	
-	
-	1)  	appoint=$(calcurse -a)	 
+	3)  	appoint=$(calcurse -a)	 
 		notify-send "$appoint"  
 		$refresh 	
 esac
