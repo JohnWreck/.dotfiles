@@ -34,7 +34,8 @@ if [ ! -z "$@" ]; then
     # Filter existing results
     while read -r line; do
       echo "$line" \?\?
-    done <<< $(locate -iA $QUERY 2>&1 | grep -v 'Permission denied\|Input/output error')
+    #done <<< $(locate -iqA $QUERY 2>&1 | grep -v 'Permission denied\|Input/output error')
+    done <<< $(locate -iqA $QUERY 2>&1 | grep '^/home/')
 
   else
     if [[ $QUERY = "~/"* ]]; then 
@@ -48,7 +49,8 @@ if [ ! -z "$@" ]; then
       exit;
     else
       # Search for query
-      locate -iA $QUERY 2>&1 | grep -v 'Permission denied\|Input/output error'
+      #locate -iA $QUERY 2>&1 | grep -v 'Permission denied\|Input/output error'
+      locate -iqA $QUERY 2>&1 | grep '^/home/'
     fi
   fi
 #elif [[ "$SHOW_HELP" == "true" ]]; then
