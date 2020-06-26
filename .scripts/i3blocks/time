@@ -6,6 +6,7 @@ refresh="pkill -RTMIN+10 i3blocks"
 
 case $BLOCK_BUTTON in
 	
+	
 	3)  	appoint=$(calcurse -a)	 
 		notify-send "$appoint"  
 		$refresh 	
