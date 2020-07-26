@@ -238,9 +238,7 @@ bindsym $mod+e exec nautilus
 #bindsym $mod+e exec /usr/bin/alacritty -e nnn -d
 bindsym $mod+m exec  --no-startup-id /usr/bin/alacritty -e cmus
 bindsym $mod+w exec firefox
-bindsym Print exec --no-startup-id maim $HOME/Pictures/Screenshots/$(date +%s).png
-bindsym $mod+Print exec --no-startup-id maim -s $HOME/Pictures/Screenshots/$(date +%s).png
-bindsym $mod+Shift+Print exec --no-startup-id $HOME/.scripts/maim_to_html.sh 
+bindsym Print exec --no-startup-id /usr/bin/flameshot gui
 
 # Exec stuff
 exec --no-startup-id /usr/bin/megasync
