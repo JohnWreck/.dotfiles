@@ -118,6 +118,8 @@ fi
 
 ## My custom
 
+export EDITOR='/usr/bin/vim'
+
 xset r rate 200 40
 
 
@@ -130,12 +132,8 @@ alias W="$HOME/.dotfiles/.scripts/i3blocks/weather"
 alias H="cat $HOME/FT/Tmp/hosts.csv | grep -i"
 alias HPING="cat $HOME/FT/Tmp/hosts.csv | fzf -e | cut -d ',' -f1 | xargs -I '{}' ping {}"
 alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
-alias M="/home/john/FT/Backup/dotfiles/.scripts/mood.py"
-alias S="cvlc http://161.53.122.184:8000/AAC128.aac &"
 alias F="fzf -e --reverse | xargs -I {} nohup xdg-open {} "
 alias P="sxiv *"
-
-export EDITOR='/usr/bin/vim'
 
 force_color_prompt=yes
 

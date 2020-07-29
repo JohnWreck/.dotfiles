@@ -214,7 +214,7 @@ client.urgent		$black		$black		$black		$black
 
 bar {
 	position top
-	status_command SCRIPT_DIR=~/.scripts/i3blocks i3blocks
+	status_command SCRIPT_DIR=$HOME/.scripts/i3blocks i3blocks
 
 colors {
 #		background $bg-color
@@ -246,7 +246,7 @@ exec --no-startup-id nm-applet
 #exec --no-startup-id Firefox
 #exec --no-startup-id Thunderbird 
 
-exec_always --no-startup-id feh --bg-fill /home/john/.wallpaper.jpg
+exec_always --no-startup-id feh --bg-fill $HOME/.wallpaper.jpg
 exec_always --no-startup-id compton
 
 # Pulse Audio controls

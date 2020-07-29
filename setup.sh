@@ -1,15 +1,17 @@
 #!/bin/bash
 
-mv $HOME/.config/dunst/ $HOME/.config/dunst.bak/
-mv $HOME/.vimrc $HOME/.vimrc.bak
-mv $HOME/.i3blocks.conf $HOME/.i3blocks.conf.bak
-mv $HOME/.scripts/ $HOME/.scripts.bak/
-mv $HOME/.bashrc $HOME/.bashrc.bak
-mv $HOME/.icons/ $HOME/.icons.bak/
-mv $HOME/.fonts/ $HOME/.fonts.bak/
-mv $HOME/.tmux.conf $HOME/.tmux.conf.bak
-mv $HOME/.config/i3/config $HOME/.config/i3/config.bak
-mv $HOME/.config/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml.bak
+mv $HOME/.config/dunst/ $HOME/.config/dunst.bak/ 2>/dev/null
+mv $HOME/.vimrc $HOME/.vimrc.bak 2>/dev/null
+mv $HOME/.i3blocks.conf $HOME/.i3blocks.conf.bak 2>/dev/null
+mv $HOME/.scripts/ $HOME/.scripts.bak/ 2>/dev/null
+mv $HOME/.bashrc $HOME/.bashrc.bak 2>/dev/null
+mv $HOME/.icons/ $HOME/.icons.bak/ 2>/dev/null
+mv $HOME/.fonts/ $HOME/.fonts.bak/ 2>/dev/null
+mv $HOME/.tmux.conf $HOME/.tmux.conf.bak 2>/dev/null
+mv $HOME/.config/i3/config $HOME/.config/i3/config.bak 2>/dev/null
+mv $HOME/.config/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml.bak 2>/dev/null
+
+echo "Backup done."
 
 mkdir $HOME/.config/alacritty
 mkdir $HOME/.config/dunst
@@ -24,3 +26,5 @@ ln -s $HOME/.dotfiles/.tmux.conf $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/i3/config $HOME/.config/i3/config
 ln -s $HOME/.dotfiles/dunst $HOME/.config/dunst
 ln -s $HOME/.dotfiles/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml
+
+echo "Links done."
