@@ -231,14 +231,14 @@ colors {
 # Window border set to 1p
 new_window pixel 2
 
-bindsym $mod+Escape exec /usr/bin/i3lock --nofork -e -c 4b4b4b
-#bindsym $mod+Ctrl+l exec /usr/bin/i3lock-fancy 
-bindsym $mod+e exec nautilus
-#bindsym $mod+e exec --no-startup-id /usr/bin/alacritty -e ranger 
 #bindsym $mod+e exec /usr/bin/alacritty -e nnn -d
+#bindsym $mod+e exec --no-startup-id /usr/bin/alacritty -e ranger 
+bindsym $mod+Escape exec /usr/bin/i3lock --nofork -e -c 4b4b4b
+bindsym $mod+e exec nautilus
 bindsym $mod+m exec  --no-startup-id /usr/bin/alacritty -e cmus
 bindsym $mod+w exec firefox
 bindsym Print exec --no-startup-id /usr/bin/flameshot gui
+bindsym $mod+Shift+a sticky toggle
 
 # Exec stuff
 exec --no-startup-id /usr/bin/megasync
@@ -250,13 +250,12 @@ exec_always --no-startup-id feh --bg-fill $HOME/.wallpaper.jpg
 exec_always --no-startup-id compton
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +3% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -3% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+ #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%- #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle # mute sound
 
 ## Media player controls
-Bindsym XF86AudioPlay exec playerctl play
-Bindsym XF86AudioPause exec playerctl pause
+Bindsym XF86AudioPlay exec playerctl play-pause
 Bindsym XF86AudioNext exec playerctl next
 Bindsym XF86AudioPrev exec playerctl previous
 
