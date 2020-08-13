@@ -140,6 +140,7 @@ bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws0
 
 bindsym $mod+Tab workspace next
+bindsym $mod+Ctrl+Tab workspace back_and_forth
 bindsym $mod+Shift+Tab workspace prev
 
 # move focused container to workspace
@@ -243,8 +244,6 @@ bindsym $mod+Shift+a sticky toggle
 # Exec stuff
 exec --no-startup-id /usr/bin/megasync
 exec --no-startup-id nm-applet
-#exec --no-startup-id Firefox
-#exec --no-startup-id Thunderbird 
 
 exec_always --no-startup-id feh --bg-fill $HOME/.wallpaper.jpg
 exec_always --no-startup-id compton
