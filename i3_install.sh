@@ -7,7 +7,4 @@ apt update
 
 apt install rofi lxappearance mpv fonts-firacode cmus feh vim-gtk3 htop compton ranger alacritty numlockx xbacklight gir1.2-gtop-2.0 lm-sensors network-manager bc sxiv flameshot
 
-## Vim-Plug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
 

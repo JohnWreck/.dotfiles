@@ -134,6 +134,7 @@ alias HPING="cat $HOME/FT/Tmp/hosts.csv | fzf -e | cut -d ',' -f1 | xargs -I '{}
 alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
 alias F="fzf -e --reverse | xargs -I {} nohup xdg-open {} "
 alias P="sxiv *"
+alias V="/usr/bin/nvim"
 
 force_color_prompt=yes
 
