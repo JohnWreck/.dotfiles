@@ -118,7 +118,8 @@ fi
 
 ## My custom
 
-export EDITOR='/usr/bin/vim'
+export VISUAL='/usr/bin/nvim'
+export EDITOR=$VISUAL
 
 xset r rate 200 40
 
@@ -132,7 +133,7 @@ alias W="$HOME/.dotfiles/.scripts/i3blocks/weather"
 alias H="cat $HOME/FT/Tmp/hosts.csv | grep -i"
 alias HPING="cat $HOME/FT/Tmp/hosts.csv | fzf -e | cut -d ',' -f1 | xargs -I '{}' ping {}"
 alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
-alias F="fzf -e --reverse | xargs -I {} nohup xdg-open {} "
+alias F="fzf -e --reverse | xargs -I {}  xdg-open {} "
 alias P="sxiv *"
 alias V="/usr/bin/nvim"
 
