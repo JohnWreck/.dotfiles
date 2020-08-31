@@ -1,28 +1,24 @@
-#!/bin/sh
+#!/usr/bin/bash
 
-# Prints all batteries, their percentage remaining and an emoji corresponding
-# to charge status (🔌 for plugged up, 🔋 for discharging on battery, etc.).
-
-case $BLOCK_BUTTON in
-    3) pgrep -x dunst >/dev/null && notify-send "🔋 Battery module" "🔋: discharging
-🛑: not charging
-♻: stagnant charge
-🔌: charging
-⚡: charged
-❗: battery very low!" ;;
-esac
-
-# Loop through all attached batteries.
-for battery in /sys/class/power_supply/BAT?
-do
-	# Get its remaining capacity and charge status.
-	capacity=$(cat "$battery"/capacity)
-	status=$(sed "s/Discharging/🔋/;s/Not charging/🛑/;s/Charging/🔌/;s/Unknown/♻️/;s/Full/⚡/" "$battery"/status)
-
-	# If it is discharging and 25% or less, we will add a ❗ as a warning.
-	 [ "$capacity" -le 25 ] && [ "$status" = "🔋" ] && warn="❗"
-
-	printf "%s%s%s%%\n" "$status" "$warn" "$capacity"
-	unset warn
-done
-
+charge=$(acpi -b | grep -oP "\d+%" | tr -d "%")
+status=$(acpi -b | awk '{print $3}')
+echo $charge%
+#echo $charge%
+if [[ $status == Dis* ]];
+then
+  if [[ $charge -lt 20 ]];
+  then
+    echo "#FF0000"
+  elif [[ $charge -lt 40 ]];
+  then
+    echo "#FFAE00"
+  elif [[ $charge -lt 60 ]];
+  then
+    echo "#FFF600"
+  elif [[ $charge -lt 85 ]];
+  then
+    echo "#A8FF00"
+  fi
+else
+  echo "#AAFF00"
+fi
