@@ -3,7 +3,7 @@
 charge=$(acpi -b | grep -oP "\d+%" | tr -d "%")
 status=$(acpi -b | awk '{print $3}')
 echo $charge%
-#echo $charge%
+echo $charge%
 if [[ $status == Dis* ]];
 then
   if [[ $charge -lt 20 ]];
