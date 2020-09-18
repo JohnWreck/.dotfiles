@@ -104,8 +104,8 @@ bindsym $mod+c focus mode_toggle
 
 
 
-set $ws1 "  "
-set $ws2 "  "
+set $ws1 " 1 "
+set $ws2 " 2 "
 set $ws3 "  "
 set $ws4 "  "
 set $ws5 " "
@@ -245,7 +245,7 @@ bindsym $mod+Shift+a sticky toggle
 exec --no-startup-id /usr/bin/megasync
 exec --no-startup-id nm-applet
 
-exec_always --no-startup-id feh --bg-fill $HOME/.wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale $HOME/.wallpaper.jpg
 exec_always --no-startup-id compton
 
 # Pulse Audio controls
