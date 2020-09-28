@@ -156,9 +156,4 @@ else
     PS1='┌──[\u@\h]─[\w]\n└──╼ \$ '
 fi
 
-
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-## nnn
-
-export NNN_BMS='m:/mnt;M:/media'
+#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
