@@ -136,6 +136,7 @@ alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
 alias F="fzf -e --reverse | xargs -I {}  xdg-open {} "
 alias P="sxiv *"
 alias V="/usr/bin/nvim"
+alias C="curl -L covid19.trackercli.com/hr"
 
 force_color_prompt=yes
 
