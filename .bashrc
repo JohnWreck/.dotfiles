@@ -137,6 +137,7 @@ alias F="fzf -e --reverse | xargs -I {}  xdg-open {} "
 alias P="sxiv *"
 alias V="/usr/bin/nvim"
 alias C="curl -L covid19.trackercli.com/hr"
+alias R="curl usd.rate.sx"
 
 force_color_prompt=yes
 
