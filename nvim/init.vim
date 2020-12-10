@@ -1,5 +1,6 @@
 set number
 set relativenumber
+set hlsearch
 "set mouse=a
 "set clipboard=unnamedplus
 
@@ -16,3 +17,5 @@ set statusline+=\ %F
 set statusline+=%=
 set statusline+=\ %c:%l/%L
 set statusline+=\ %p%%
+
+colorscheme industry
