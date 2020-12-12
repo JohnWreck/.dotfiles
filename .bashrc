@@ -118,6 +118,8 @@ fi
 
 ## My custom
 
+[[ $TERM != "screen" ]] && exec tmux
+
 export VISUAL='/usr/bin/nvim'
 export EDITOR=$VISUAL
 
