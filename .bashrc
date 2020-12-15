@@ -118,7 +118,10 @@ fi
 
 ## My custom
 
+# Exec Tmux
 [[ $TERM != "screen" ]] && exec tmux
+
+export TERM=screen-256color
 
 export VISUAL='/usr/bin/nvim'
 export EDITOR=$VISUAL
@@ -162,4 +165,4 @@ else
     PS1='┌──[\u@\h]─[\w]\n└──╼ \$ '
 fi
 
-#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
