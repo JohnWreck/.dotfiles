@@ -3,6 +3,10 @@ set relativenumber
 set hlsearch
 set mouse=a
 set clipboard=unnamedplus
+set ignorecase
+set smartcase
+set incsearch
+set showmatch
 
 " Status Line (left)
 
@@ -23,4 +27,3 @@ colorscheme industry
 " Keybindings
 
 vnoremap <C-c> "+y
-
