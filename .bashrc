@@ -143,6 +143,9 @@ alias P="sxiv *"
 alias V="/usr/bin/nvim"
 alias C="curl -L covid19.trackercli.com/hr"
 alias R="curl usd.rate.sx"
+alias Rd="curl usd.rate.sx/btc@1d"
+alias Rw="curl usd.rate.sx/btc@1w"
+alias Rm="curl usd.rate.sx/btc@1M"
 alias RS="mpv http://161.53.122.184:8000/AAC128.aac"
 
 
