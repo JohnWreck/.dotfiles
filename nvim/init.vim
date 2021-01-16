@@ -21,7 +21,8 @@ set statusline+=%=
 set statusline+=\ %c:%l/%L
 set statusline+=\ %p%%
 
-colorscheme industry
+" colorscheme industry
+ colorscheme pablo
 
 " Keybindings
 
