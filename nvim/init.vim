@@ -6,7 +6,6 @@ set clipboard=unnamedplus
 set ignorecase
 set smartcase
 set incsearch
-set showmatch
 
 " Status Line (left)
 
