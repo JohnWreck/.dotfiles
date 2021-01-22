@@ -168,4 +168,3 @@ else
     PS1='┌──[\u@\h]─[\w]\n└──╼ \$ '
 fi
 
-#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
