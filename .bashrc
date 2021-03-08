@@ -117,16 +117,17 @@ if ! shopt -oq posix; then
 fi
 
 ## My custom
-
 # Exec Tmux
-[[ $TERM != "screen" ]] && exec tmux
+#[[ $TERM != "screen" ]] && exec tmux
 
-export TERM=screen-256color
+export TERM=screen-256color	
 
 export VISUAL='/usr/bin/nvim'
 export EDITOR=$VISUAL
 
 xset r rate 200 40
+
+
 
 
 alias OUTPUT1="pactl set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo"
@@ -167,4 +168,6 @@ if [ "$color_prompt" = yes ]; then
 else
     PS1='┌──[\u@\h]─[\w]\n└──╼ \$ '
 fi
+
+
 
