@@ -118,10 +118,9 @@ fi
 
 ## My custom
 # Exec Tmux
-#[[ $TERM != "screen" ]] && exec tmux
+[[ $TERM != "screen" ]] && exec tmux
 
-export TERM=screen-256color	
-
+export TERM=screen-256color
 export VISUAL='/usr/bin/nvim'
 export EDITOR=$VISUAL
 
