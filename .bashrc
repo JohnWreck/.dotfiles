@@ -118,7 +118,7 @@ fi
 
 ## My custom
 # Exec Tmux
-[[ $TERM != "screen" ]] && exec tmux
+#[[ $TERM != "screen" ]] && exec tmux
 
 
 export TERM=screen-256color
