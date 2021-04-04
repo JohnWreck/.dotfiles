@@ -121,7 +121,7 @@ fi
 #[[ $TERM != "screen" ]] && exec tmux
 
 
-export TERM=screen-256color
+#export TERM=screen-256color
 export VISUAL='/usr/bin/nvim'
 export EDITOR=$VISUAL
 
