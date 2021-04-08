@@ -116,20 +116,19 @@ if ! shopt -oq posix; then
   fi
 fi
 
-## My custom
-# Exec Tmux
-#[[ $TERM != "screen" ]] && exec tmux
+###########################################################################################
 
+#Exec Tmux
+#[[ $TERM != "screen" ]] && exec tmux
 
 #export TERM=screen-256color
 export VISUAL='/usr/bin/nvim'
 export EDITOR=$VISUAL
 
+#Set keyboard speed
 xset r rate 200 40
 
-
-
-
+#Aliases
 alias OUTPUT1="pactl set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo"
 alias MYIP="curl -s ifconfig.co"
 alias PFSCP="cp -v $HOME/Downloads/config-PFS.*.xml $HOME/Backup/Configs/PFS/"
@@ -141,7 +140,6 @@ alias HPING="cat $HOME/Tmp/hosts.csv | fzf -e | cut -d ',' -f1 | xargs -I '{}' p
 alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
 alias F="fzf -e --reverse | xargs -I {}  xdg-open {} "
 alias P="sxiv *"
-alias N="/usr/bin/nvim"
 alias C="curl -L covid19.trackercli.com/hr"
 alias R="curl usd.rate.sx"
 alias Rd="curl usd.rate.sx/btc@1d"
@@ -149,7 +147,9 @@ alias Rw="curl usd.rate.sx/btc@1w"
 alias Rm="curl usd.rate.sx/btc@1M"
 alias RS="mpv http://161.53.122.184:8000/AAC128.aac"
 alias T="watch sensors k10temp-pci-*"
+alias M="nvim ~/Documents/_misc.txt"
 
+#Set PS1
 force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
@@ -168,6 +168,3 @@ if [ "$color_prompt" = yes ]; then
 else
     PS1='┌──[\u@\h]─[\w]\n└──╼ \$ '
 fi
-
-
-
