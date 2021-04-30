@@ -129,12 +129,9 @@ export EDITOR=$VISUAL
 xset r rate 200 40
 
 #Aliases
-alias OUTPUT1="pactl set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo"
 alias MYIP="curl -s ifconfig.co"
 alias PFSCP="cp -v $HOME/Downloads/config-PFS.*.xml $HOME/Backup/Configs/PFS/"
 alias UP="sudo apt update && sudo apt upgrade -V"
-alias WTTR="curl -s wttr.in/Zagreb"
-alias W="$HOME/.dotfiles/.scripts/i3blocks/weather"
 alias H="cat $HOME/Tmp/hosts.csv | grep -i"
 alias HPING="cat $HOME/Tmp/hosts.csv | fzf -e | cut -d ',' -f1 | xargs -I '{}' ping {}"
 alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
@@ -147,7 +144,6 @@ alias Rw="curl usd.rate.sx/btc@1w"
 alias Rm="curl usd.rate.sx/btc@1M"
 alias RS="mpv http://161.53.122.184:8000/AAC128.aac"
 alias T="watch sensors k10temp-pci-*"
-alias M="nvim ~/Documents/_misc.txt"
 
 #Set PS1
 force_color_prompt=yes
