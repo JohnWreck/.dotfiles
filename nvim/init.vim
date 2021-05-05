@@ -26,6 +26,6 @@ vnoremap <C-c> "+y
 
 "colorscheme industry
 colorscheme pablo
-set background=dark
+"set background=dark
 
 hi StatusLine ctermfg=232 ctermbg=136 cterm=bold guifg=#080808 guibg=#af8700 gui=bold
