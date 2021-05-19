@@ -1,11 +1,20 @@
 set number
 set relativenumber
-set hlsearch
+set nohlsearch
 set mouse=a
 set clipboard=unnamedplus
 set ignorecase
 set smartcase
 set incsearch
+set signcolumn=yes
+set scrolloff=10
+
+" Set Tab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
 
 " Status Line (left)
 set statusline=
