@@ -6,7 +6,7 @@ set clipboard=unnamedplus
 set ignorecase
 set smartcase
 set incsearch
-set signcolumn=yes
+"set signcolumn=yes
 set scrolloff=10
 
 " Set Tab
