@@ -28,9 +28,15 @@ set statusline+=%=
 set statusline+=\ %c:%l/%L
 set statusline+=\ %p%%
 
+" Escape 
+inoremap jk <Esc>
+inoremap kj <Esc>
 
+" Tab visual selection
+vmap <Tab> >gv
+vmap <S-Tab> <gv
 
-" Keybindings
+" Copy
 vnoremap <C-c> "+y
 
 "colorscheme industry
