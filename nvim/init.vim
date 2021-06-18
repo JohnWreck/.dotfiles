@@ -43,4 +43,5 @@ vnoremap <C-c> "+y
 colorscheme pablo
 "set background=dark
 
-hi StatusLine ctermfg=232 ctermbg=136 cterm=bold guifg=#080808 guibg=#af8700 gui=bold
+" Status line color
+"hi StatusLine ctermfg=232 ctermbg=136 cterm=bold guifg=#080808 guibg=#af8700 gui=bold
