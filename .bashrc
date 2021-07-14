@@ -119,7 +119,8 @@ fi
 ###########################################################################################
 
 #Exec Tmux
-[[ $TERM != "screen" ]] && exec tmux
+[[ $TERM != "screen" ]] && exec tmux a
+
 
 export TERM=screen-256color
 export VISUAL='/usr/bin/nvim'
