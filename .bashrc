@@ -119,7 +119,7 @@ fi
 ###########################################################################################
 
 #Exec Tmux
-[[ $TERM != "screen" ]] && exec tmux a
+[[ $TERM != "screen" ]] && exec tmux
 
 
 export TERM=screen-256color
