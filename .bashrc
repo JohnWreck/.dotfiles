@@ -132,7 +132,7 @@ xset r rate 200 40
 #Aliases
 alias MYIP="curl -s ifconfig.co"
 alias PFSCP="cp -v $HOME/Downloads/config-PFS.*.xml $HOME/Backup/Configs/PFS/ && rm $HOME/Downloads/config-PFS.*.xml"
-alias UP="sudo apt update && sudo apt upgrade -V"
+alias UP="sudo apt update && sudo apt upgrade -V; flatpak update"
 alias H="cat $HOME/Tmp/hosts.csv | grep -i"
 alias HPING="cat $HOME/Tmp/hosts.csv | fzf -e | cut -d ',' -f1 | xargs -I '{}' ping {}"
 alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
