@@ -43,6 +43,7 @@ vnoremap <C-c> "+y
 colorscheme pablo
 "set background=dark
 
+:let loaded_matchparen = 1
 
 " Status line color
 "hi StatusLine ctermfg=232 ctermbg=136 cterm=bold guifg=#080808 guibg=#af8700 gui=bold
