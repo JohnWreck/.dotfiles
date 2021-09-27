@@ -43,7 +43,19 @@ vnoremap <C-c> "+y
 colorscheme pablo
 "set background=dark
 
+"Disable Highlight match
 :let loaded_matchparen = 1
 
-" Status line color
-"hi StatusLine ctermfg=232 ctermbg=136 cterm=bold guifg=#080808 guibg=#af8700 gui=bold
+"automated installation of vimplug if not installed
+"if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+"    silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+"        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"    autocmd VimEnter * PlugInstall --sync | source ~/.config/nvim/init.vim
+"endif
+"
+"call plug#begin('~/.config/nvim/plugged')
+"
+""Install pip install black
+""Plug 'psf/black', { 'branch': 'stable' }
+"
+"call plug#end()
